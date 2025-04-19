@@ -1,0 +1,16 @@
+# MoveFlow Aptos MCP Client 依赖项
+# 基本依赖
+aptos-sdk
+python-dotenv>=0.19.0
+
+# Agent 依赖
+agents-protocol
+openai>=1.0.0
+
+# 工具依赖
+mcp-client
+pendulum>=2.1.0  # 用于时间处理和时区支持
+
+# 其他依赖
+argparse
+asyncio

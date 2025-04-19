@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "moveflow-aptos": {
+      "transportType": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@amyseer/moveflow-aptos-mcp-server@1.0.2"
+      ],
+      "env": {
+        "APTOS_NETWORK": "testnet",
+        "APTOS_NODE_URL": "https://fullnode.testnet.aptoslabs.com/v1",
+        "READ_ONLY_MODE": "false",
+        "SIGNING_MODE": "client",
+        "APTOS_PRIVATE_KEY": "ed25519-priv-0x45dae2e0df7a4fe8108734b1099813e5de90735aef6078bf0cdcdc1f83e54cc5"
+      },
+      "timeout": 30,
+      "autoApprove": [
+        "create-stream",
+        "withdraw-stream",
+        "check-pending-transaction"
+      ]
+    }
+  }
+}
